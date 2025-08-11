@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Basics & Box Model Assignment</title>
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>CSS Basics & Box Model</h1>
+        <p>A comprehensive demonstration of CSS fundamentals and layout principles</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#basics">CSS Basics</a></li>
+            <li><a href="#box-model">Box Model</a></li>
+            <li><a href="#layout">Layout</a></li>
+            <li><a href="#styling">Styling</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Introduction Section -->
+        <section class="section" id="basics">
+            <h2>CSS Basics</h2>
+            <p>
+                This page demonstrates the fundamental concepts of CSS (Cascading Style Sheets) and how they work together to create visually appealing web pages. CSS allows us to separate content from presentation, making our HTML more semantic and our designs more maintainable.
+            </p>
+            <p>
+                Key CSS concepts covered include selectors, properties, values, and the cascade. We're using various types of selectors including element selectors, class selectors, and pseudo-selectors to target specific HTML elements.
+            </p>
+        </section>
+
+        <!-- Box Model Section -->
+        <section class="section" id="box-model">
+            <h2>The CSS Box Model</h2>
+            <p>
+                The CSS Box Model is fundamental to understanding layout in CSS. Every element on a web page is considered a rectangular box, consisting of content, padding, border, and margin.
+            </p>
+            
+            <div class="box-demo">
+                <h3>Box Model Examples</h3>
+                <div class="box-example box-small">Small Box (10px padding, 10px margin, 1px border)</div>
+                <div class="box-example">Default Box (20px padding, 20px margin, 3px border)</div>
+                <div class="box-example box-large">Large Box (40px padding, 30px margin, 8px border)</div>
+            </div>
+            
+            <p>
+                Notice how the padding creates space inside each box, the margin creates space around each box, and the border provides a visual boundary. The total width and height of an element includes all these components.
+            </p>
+        </section>
+
+        <!-- Card Layout Section -->
+        <section class="section" id="layout">
+            <h2>Layout Techniques</h2>
+            <p>
+                Modern CSS provides several powerful layout techniques. Below we demonstrate flexbox for creating responsive card layouts with consistent spacing using the box model properties.
+            </p>
+            
+            <div class="card-container">
+                <div class="card">
+                    <h3>Margin</h3>
+                    <p>Creates space outside the element's border. Margins collapse vertically between adjacent elements, and can be negative values to pull elements closer together.</p>
+                </div>
+                <div class="card">
+                    <h3>Padding</h3>
+                    <p>Creates space inside the element, between the content and the border. Padding is always positive and affects the element's total size unless box-sizing is set to border-box.</p>
+                </div>
+                <div class="card">
+                    <h3>Border</h3>
+                    <p>The border sits between margin and padding. It can have different styles, colors, and widths, and contributes to the element's total dimensions.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Styling Section -->
+        <section class="section" id="styling">
+            <h2>Visual Styling</h2>
+            <p>
+                CSS provides extensive control over the visual presentation of elements. This includes colors, typography, backgrounds, and interactive effects like hover states and transitions.
+            </p>
+            <p>
+                Below are examples of styled buttons that demonstrate how margin, padding, and borders work together to create interactive elements with proper spacing and visual feedback.
+            </p>
+            
+            <div class="button-section">
+                <a href="#" class="btn">Primary Button</a>
+                <a href="#" class="btn btn-secondary">Secondary Button</a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 </p>
+    </footer>
+</body>
+</html>
